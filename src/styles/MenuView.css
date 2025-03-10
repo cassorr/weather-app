@@ -1,54 +1,63 @@
-/* MenuView.css - Styles for the Menu Page */
+/* MenuView.css */
 .menu-container {
+    background-color: #1e1e2e;
+    color: white;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #1e1e2e;
-    min-height: 100vh;
-    color: white;
     padding: 20px;
 }
 
 .menu-header {
-    width: 100%;
-    max-width: 400px;
     display: flex;
     justify-content: space-between;
+    width: 100%;
+    max-width: 400px;
     align-items: center;
 }
 
 .menu-title {
-    font-size: 2rem;
+    font-size: 24px;
+    font-weight: bold;
 }
 
-.menu-button {
-    background: none;
-    border: none;
+.add-city-button {
+    background-color: #6c63ff;
     color: white;
-    font-size: 1.8rem;
+    border: none;
+    width: 40px;
+    height: 40px;
+    font-size: 24px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     cursor: pointer;
+    text-decoration: none;
 }
 
 .city-list {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
     width: 100%;
     max-width: 400px;
     margin-top: 20px;
 }
 
 .city-card {
+    background-color: #3a3a5c;
+    color: white;
+    padding: 15px;
+    border-radius: 10px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: #4a4e69;
-    color: white;
+    margin-bottom: 15px;
     text-decoration: none;
-    font-size: 1.5rem;
-    padding: 15px;
-    border-radius: 10px;
-    transition: 0.3s ease-in-out;
+    transition: 0.3s;
+}
+
+.city-card:hover {
+    background-color: #52528c;
 }
 
 .city-info {
@@ -57,50 +66,14 @@
 }
 
 .city-name {
-    font-size: 1.2rem;
+    font-size: 18px;
     font-weight: bold;
 }
 
 .city-temp {
-    font-size: 1rem;
+    font-size: 16px;
 }
 
 .weather-icon {
-    font-size: 2rem;
+    font-size: 24px;
 }
-
-.city-card:hover {
-    background: #6c72a6;
-}
-
-.loading-text {
-    font-size: 1.2rem;
-    color: #bbb;
-}
-
-.add-city-button {
-    position: absolute;
-    top: 20px;
-    right: 20px;
-    background: #6c72a6;
-    color: white;
-    font-size: 2rem;
-    width: 45px;
-    height: 45px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 50%;
-    text-decoration: none;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
-    border: none;
-    padding: 0;
-
-}
-
-.add-city-button:hover {
-    background: #4a4e69;
-}
-
-
-

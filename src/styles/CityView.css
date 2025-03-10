@@ -1,0 +1,55 @@
+.city-container {
+    background-color: #1A1A2E;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.city-header {
+    margin-bottom: 20px;
+}
+
+.city-temp {
+    font-size: 48px;
+    font-weight: bold;
+}
+
+.weather-description {
+    font-size: 18px;
+    color: #bbb;
+}
+
+.forecast h3 {
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+.hourly, .weekly {
+    display: flex;
+    overflow-x: auto;
+    gap: 10px;
+    padding: 10px 0;
+    justify-content: center;
+}
+
+.hour-card, .day-card {
+    background: #3B3B98;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+    min-width: 60px;
+}
+
+.weather-details {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+}
+
+.detail-card {
+    background: #3B3B98;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+}

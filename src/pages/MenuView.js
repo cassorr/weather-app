@@ -35,19 +35,25 @@ const MenuView = () => {
 
             {/* City List */}
             <div className="city-list">
-                {cities.length > 0 ? (
-                    cities.map((city) => (
-                        <Link key={city.id} to={`/city/${city.name}`} className="city-card">
-                            <div className="city-info">
-                                <span className="city-name">{city.name}, {city.country}</span>
-                                <span className="city-temp">23°</span> {/* Replace with real data */}
-                            </div>
-                            <span className="weather-icon">❄️</span> {/* Replace with real weather icon */}
-                        </Link>
-                    ))
-                ) : (
-                    <p className="loading-text">No cities added yet.</p>
-                )}
+                {/* Static Missoula, MT Tile */}
+                <Link to="/city/Missoula" className="city-card">
+                    <div className="city-info">
+                        <span className="city-name">Missoula, MT</span>
+                        <span className="city-temp">23°</span> {/* Replace with real data */}
+                    </div>
+                    <span className="weather-icon">❄️</span> {/* Replace with real weather icon */}
+                </Link>
+
+                {/* Dynamically Fetched Cities */}
+                {cities.map((city) => (
+                    <Link key={city.id} to={`/city/${city.name}`} className="city-card">
+                        <div className="city-info">
+                            <span className="city-name">{city.name}, {city.country}</span>
+                            <span className="city-temp">23°</span> {/* Replace with real data */}
+                        </div>
+                        <span className="weather-icon">❄️</span> {/* Replace with real weather icon */}
+                    </Link>
+                ))}
             </div>
         </div>
     );
